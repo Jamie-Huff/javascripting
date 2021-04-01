@@ -39,17 +39,17 @@
  */
  
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
-var flavor = "vanilla";
+var flavor = 'strawberries';
 var vessel = "cone";
 var toppings = "sprinkles";
 
-let flavorOptions = ['vanilla', 'chocolate']
+let flavorOptions = ['vanilla', 'chocolate', 'strawberries']
 let vesselOptions = ['bowl', 'cone']
 let toppingsOptions = ['sprinkles', 'peanuts']
 
 
-if (flavor === flavorOptions[0] || flavor === flavorOptions[1] && vessel === vesselOptions[0] || vessel === vesselOptions[1] && toppings === toppingsOptions[0] || toppings === toppingsOptions[1]) {
+if (flavorOptions.includes(flavor) && vesselOptions.includes(vessel) && toppingsOptions.includes(toppings)) {
     console.log(`I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`)
-    }
 }
+
 
